@@ -20,8 +20,9 @@ from django.conf import settings
 from django.conf.urls import url,include
 
 urlpatterns = [
+    url(r'^', include('sampleapplication.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^sampleapplication/', include('sampleapplication.urls')),
+    # url(r'^sampleapplication/', include('sampleapplication.urls')),
     # path('', TemplateView.as_view(template_name='home_page.html'), name='homePage'),
     # path('login/', TemplateView.as_view(template_name='registration/login.html'), name='homePage'),
 ]
